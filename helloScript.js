@@ -1,4 +1,7 @@
-var msg = "Hello, world!";
-alert(msg);
-console.log("Hello, console!");
-document.write("Hello, document!");
+var inputAge = parseInt(window.prompt("Enter your age: "));
+if (inputAge >= 18){
+    document.write("Hello, you are in a proper age.");
+}
+else{
+    document.write("You are a bit young.")
+}
