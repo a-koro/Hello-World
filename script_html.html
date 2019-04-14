@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Script Page</title>
+        <style>
+            h1 {
+                color: pink;
+                font-style: italic;
+                font-size: 80px;
+            }
+            ol {
+                color: beige;
+                font-size: 50px;
+            }
+            button {
+                float: right;
+            }
+            div {
+                float: left;
+            }
+        </style>
+    </head>
+    <body background="script_html.jpg.jpg">
+        <div>
+            <img src="Untitled-1.png">
+            <h1 id="header1">Test Script Page</h1>
+            <ol>
+                <li>Weather</li>
+                <li>Color</li>
+                <li>Hobbies</li>
+                <li>Food</li>
+            </ol>
+        </div>
+        <button onclick="button()">Sign in</button>
+        <script>
+            function button() {
+                var username = window.prompt("Username: ");
+                var password = window.prompt("Password: ");
+                document.getElementById("header1").innerHTML = ("Hello " + username);
+            }
+        </script>
+    </body>
+</html>
