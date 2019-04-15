@@ -8,7 +8,7 @@
                 font-style: italic;
                 font-size: 80px;
             }
-            ol {
+            ul {
                 color: beige;
                 font-size: 50px;
             }
@@ -18,18 +18,26 @@
             div {
                 float: left;
             }
+            a:hover {
+                color: pink;
+                text-decoration-line: none;
+            }
+            a {
+                color: white;
+                text-decoration-line: none;
+            }
         </style>
     </head>
     <body background="script_html.jpg.jpg">
         <div>
             <img src="Untitled-1.png">
             <h1 id="header1">Test Script Page</h1>
-            <ol>
-                <li>Weather</li>
-                <li>Color</li>
+            <ul>
+                <li><a href="home">Products</a></li>
+                <li><a href="us">About us</a></li>
                 <li>Hobbies</li>
                 <li>Food</li>
-            </ol>
+            </ul>
         </div>
         <button onclick="button()">Sign in</button>
         <script>
