@@ -12,7 +12,7 @@
                 color: beige;
                 font-size: 50px;
             }
-            button {
+            #form{
                 float: right;
             }
             div {
@@ -25,6 +25,9 @@
             a {
                 color: white;
                 text-decoration-line: none;
+            }
+            input{
+                margin: 4px;
             }
         </style>
     </head>
@@ -39,12 +42,18 @@
                 <li>Food</li>
             </ul>
         </div>
-        <button onclick="button()">Sign in</button>
+        <!-- IF THE NEXT STEP INSTEAD OF A DIV ELEMENT YOU USE A FORM ELEMENT THE FUNCTION
+        DOES NOT WORK BECAUSE FORM ELEMENT REFRESHES THE PAGE -->
+        <div id="form">
+            <input id="username" type="text" name="username" placeholder="username"><br>
+            <input id="password" type="password" name="password" placeholder="password"><br>
+            <input id="submit" onclick = "submitForm()" type="submit">
+        </div>
         <script>
-            function button() {
-                var username = window.prompt("Username: ");
-                var password = window.prompt("Password: ");
-                document.getElementById("header1").innerHTML = ("Hello " + username);
+            var username = document.getElementById("username");
+            var submit = document.getElementById("submit");
+            function submitForm() {
+                document.getElementById("header1").innerHTML = ("Hello " + username.value );
             }
         </script>
     </body>

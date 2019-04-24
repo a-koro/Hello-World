@@ -40,12 +40,12 @@ function removeTask(e){
   // get the parent list item to remove
   e.target.innerHTML = "Remove";
   e.target.setAttribute("class", "clear");
+  e.target.addEventListener("click", completlyRemove);
   var taskItem = e.target.parentElement;
   doneList.appendChild(taskItem);
+  e.target.addEventListener("click", completlyRemove);
 }
-clearButtonFinal.addEventListener("click", completlyRemove);
-
 function completlyRemove(e){
-    var taskToRemove = e.target.parentElement;
-    doneList.removeChild(taskToRemove);
+  var taskItem = e.target.parentElement;
+  doneList.removeChild(taskItem);
 }

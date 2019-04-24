@@ -60,3 +60,21 @@ li{
     font-weight: 600;
     font-size: 1.3em;
 }
+#leftList{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3em;
+    color: slategrey;
+}
+#rightList{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3em;
+    color: slategrey;
+}
+#note{
+    width: 50%;
+    height: 60%;
+    background-color: rgb(88, 88, 88);
+    margin: auto;
+}
