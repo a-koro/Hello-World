@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>Toggle buttons</title>
+    <style>
+        body{
+            margin: auto;
+            max-width: 700px;
+        }
+        #buttons , #lists{
+            text-align: center;
+            margin: 120px;
+            background-color: bisque;
+            height: 250px;
+            width: 400px;
+        }
+        #button1 , #button2{
+            width: 70px;
+            height: 50px;
+            margin: 60px;
+        }
+        p{
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        #list1{
+            float: left;
+            background-color: aqua;
+        }
+        #list2{
+            float: right;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="buttons">
+        <p>Toggle Lesson</p>
+        <button id="button1">Toggle list 1</button>
+        <button id="button2">Toggle list 2</button>
+    </div>
+    <div id="lists">
+        <ul id="list1">
+            <li>Name</li>
+            <li>Age</li>
+            <li>Country</li>
+            <li>Address</li>
+        </ul>
+        <ul id="list2">
+            <li>Job</li>
+            <li>Income</li>
+            <li>Status</li>
+        </ul>
+    </div>
+    <script src="jquery-3.4.0.js"></script>
+    <script>
+        $("#button1").on("click" , function(){
+            $("#list1").toggle(300);
+        });
+    </script>
+</body>

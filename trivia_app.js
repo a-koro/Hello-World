@@ -4,6 +4,7 @@ current = 0,
 score = 0,
 points = [];
 
+
 var defaultQuestions = [
     {
         question: "Where are the three smallest bones in the human body?",
@@ -44,7 +45,8 @@ var defaultQuestions = [
         choiceC: "Jupiter",
         choiceD: "Uranus",
         correct: "C"
-    }];
+    }
+];
 
 var elQuiz = document.getElementById("quiz");
 var elQuizStatus = document.getElementById("quizStatus");
