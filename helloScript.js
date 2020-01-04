@@ -5,4 +5,3 @@ if (inputAge >= 18){
 else{
     document.write("You are a bit young.")
 }
-// goood
